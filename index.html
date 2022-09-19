@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/style.css">
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel = "stylesheet">
+    <title>Weather Widget</title>
+</head>
+
+<header class="hero">
+    <div class="hero-body">
+        <div class="container">
+            <h1 class="title">Weather Dashboard</h1>
+        </div>
+    </div>
+</header>
+
+<main id="info">
+<div class="container">
+    <div class="columns">
+        <div class="column-is-one-quarter content">
+            <form>
+                <input
+                class="input is-info"
+                type="text"
+                id="city-search"
+                placeholder="Enter a city">
+                <button class="search-btn" id="search-button">Get Weather</button>
+            </form>
+        </div>
+
+
+    <!--Search History-->
+    <div class="box table-box">
+    <div class="table-container">
+        <table class="table-is-bordered" id="cityList">
+            <tr></tr>
+            <!--table from js-->
+        </table>
+        <button id="clr-btn" class="button is-danger">CLEAR</button>
+    </div>
+
+<!--Data Return from Query-->
+<div class="column">
+    <div id="weather-data" class="columns box content">
+        <div class="column current-city-data">
+            <h2 id="city-name"></h2>
+            <h4 id="city-cond"></h4>
+            <h4 id="temp"></h4>
+            <h4 id="humidity"></h4>
+            <h4 id="wind-speed"></h4>
+        </div>
+        <div class="column">
+            <div class="icon"></div>
+        </div>
+    </div>
+
+
+
+</main>
+<script src="./assets/java.js"></script>
+</html>
