@@ -1,13 +1,11 @@
-// establish global variables
 var searchButtonEl = $("#search-btn");
 var errorModalEl = $("#error-modal");
 var catchModalEl = $("#catch-modal");
-var apiKey = "4f9f77fa9ffcd99798bf3e2b55a1989d";
+var apiKey = "a0aca8a89948154a4182dcecc780b513";
 let currentCity = "";
 var weatherContainerEl = $("#weather-container");
 var forecastCounter = 1;
 var cityArray = [];
-
 
 var formSubmitHandler = function (event) {
     event.preventDefault();
